@@ -37,7 +37,7 @@ parse(p,xVec,A,n,varargin{:});
     neighborMat=p.Results.A;
     num=p.Results.n;
     xVec=p.Results.xVec;
-    grid=p.Results.Grid;
+    Grid=p.Results.Grid;
     MidFormations=p.Results.MidFormations;
     Ind=p.Results.Index;
 
@@ -49,7 +49,7 @@ finalcolor=[0 0 1]*0.8;
 %
 figure;
 hold on; box on; axis equal
-switch grid
+switch Grid
     case 'On'
         fontsize=10;
         set(gca, 'fontSize', fontsize)
